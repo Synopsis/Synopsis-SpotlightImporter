@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ln -s $HOME /private/tmp/CurrentUser
+logger "created alias to "$HOME" at /private/tmp/CurrentUser"
+
+
+exit 0

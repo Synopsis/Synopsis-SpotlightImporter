@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# clean up the alias i created that points to the user's home folder
+sudo rm /private/tmp/CurrentUser
+
+#/usr/bin/mdimport -r "$HOME/Library/Spotlight/SynopsisImporter.mdimporter"
+sudo touch "$HOME/Library/Spotlight"
+
+exit 0

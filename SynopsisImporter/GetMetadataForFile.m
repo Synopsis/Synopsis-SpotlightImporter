@@ -33,17 +33,17 @@ Boolean GetMetadataForFile(void *thisInterface, CFMutableDictionaryRef attribute
     @autoreleasepool
     {
 		
-        NSDictionary* availableMetadataKeysAndValues = [NSDictionary dictionaryWithContentsOfFile:(__bridge NSString *)(pathToFile)];
+        //NSDictionary* availableMetadataKeysAndValues = [NSDictionary dictionaryWithContentsOfFile:(__bridge NSString *)(pathToFile)];
 		
-        if(availableMetadataKeysAndValues)
-        {
-            [availableMetadataKeysAndValues enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-				
-                ((__bridge NSMutableDictionary *)attributes)[(NSString *)key] = obj;
-            }];
+        //if(availableMetadataKeysAndValues)
+        //{
+        //    [availableMetadataKeysAndValues enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+		//		
+        //        ((__bridge NSMutableDictionary *)attributes)[(NSString *)key] = obj;
+        //    }];
 			
             ok = TRUE;
-        }
+        //}
     }
     // Return the status
     return ok;
